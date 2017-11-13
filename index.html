@@ -1,3 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<style>
+    .dropdown-menu {
+        left: 5px;
+    }
+
+    body .navbar-default {
+        background-color: #fff;
+    }
+
+    body .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        color: #00c3f5;
+        background: #fff;
+    }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        color: #00c3f5;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #000;
+    }
+
+    th:nth-child(1), td:nth-child(1) {
+        text-align: right;
+    }
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border: none;
+    }
+
+    .boot {
+        text-align: center;
+    }
+
+    .boot img {
+        width: 65%;
+    }
+
+    .foot li a {
+        color: #999;
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    .foot li{
+        float: left;
+        border-left: 1px solid #efefef;
+    }
+    .foots div a{
+        color: #999;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .foots div {
+        float: left;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="#">首页</a></li>
+                <li><a href="#">公司历史</a></li>
+                <li><a href="#">公司现状</a></li>
+                <li><a href="#">重要人物</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">产品介绍</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">硬件</a></li>
+                        <li><a href="#">软件</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">购买方式</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">经销商</a></li>
+                        <li><a href="#">电子商务</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">在线答疑</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="row container">
+    <div class="col-md-5 col-md-offset-3">
+        <div id="carousel-example-generic" class="carousel slide row" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators row">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/index_img/bg01.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/index_img/bg02.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/index_img/bg03.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4" style="padding-bottom: 30px">
+        <table class="table">
+            <caption style="text-align: center;color: #000">基本参数</caption>
+            <tbody>
+            <tr>
+                <td class="col-md-1">品牌</td>
+                <td class="col-md-3">魅族</td>
+            </tr>
+            <tr>
+                <td>型号</td>
+                <td>魅蓝 Note6 航海王限定版套装</td>
+            </tr>
+            <tr>
+                <td>尺寸</td>
+                <td>154.6*75.2*8.35mm</td>
+            </tr>
+            <tr>
+                <td>分辨率</td>
+                <td>1920×1080</td>
+            </tr>
+            <tr>
+                <td>机身内存</td>
+                <td>32GB</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>骁龙 625 高性能处理器</td>
+            </tr>
+            <tr>
+                <td>运营商与制式</td>
+                <td>全网通</td>
+            </tr>
+            <tr>
+                <td>WLAN功能</td>
+                <td>支持 5GHz 和 2.4GHz 频段802.11 a/b/g/n 无线网络</td>
+            </tr>
+            <tr>
+                <td>指纹组数</td>
+                <td>5组</td>
+            </tr>
+            <tr>
+                <td>mTouch传感器</td>
+                <td>电容式触摸传感器</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container boot">
+    <div class="col-md-3"><img src="images/index_img/bg01.jpg" alt=""></div>
+    <div class="col-md-3"><img src="images/index_img/bg02.jpg" alt=""></div>
+    <div class="col-md-3"><img src="images/index_img/bg03.jpg" alt=""></div>
+    <div class="col-md-3"><img src="images/index_img/bg01.jpg" alt=""></div>
+</div>
+
+<div class="row foot">
+    <ul class="row" style="padding-left: 18%;padding-top: 1%">
+        <li class="">
+            <a class="layout-footer-interlock-link">了解魅族</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">加入我们</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">联系我们</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">Flyme</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">魅族社区</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">天猫店</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">问题反馈</a>
+        </li>
+        <li class="">
+            <a class="layout-footer-interlock-link">线上销售授权名单公示</a>
+        </li>
+    </ul>
+</div>
+<div class="row foots">
+    <div class="clearfix" style="padding-left: 16%;    padding-top: 1%;">
+          <a >©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.</a>
+          <a >粤ICP备13003602号-2</a>
+          <a>合字B2-20170010</a>
+          <a >营业执照</a>
+          <a>法律声明</a>
+          <a class="layout-footer-copyright-link">粤公网安备 44049102496009 号</a>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="lib/bootstrap/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $(".navbar-nav >li").hover(function () {
+            $(".navbar-nav .dropdown-menu").hide();
+            $(this).siblings().removeClass("active")
+            $(this)
+                .addClass("active")
+                .find(".dropdown-menu").show();
+        }, function () {
+            $(".navbar-nav .dropdown-menu").hide();
+            $(".navbar-nav >li").siblings().removeClass("active")
+            $(".navbar-nav >li:eq(0)").addClass("active")
+        });
+        $('.carousel').carousel({
+            interval: 1000
+        })
+    })
+</script>
+</body>
+</html>
+
+
+<!--
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -5,8 +267,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>首页</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" type="text/css"/>
     <script language="JavaScript">
-        <!--
+        &lt;!&ndash;
         function mmLoadMenus() {
             if (window.mm_menu_1214120805_0) return;
             window.mm_menu_1214120805_0_1 = new Menu("硬件", 100, 30, "", 14, "#FFFFFF", "#FFFFFF", "#666666", "#333333", "center", "middle", 3, 0, 0, -5, 7, true, false, true, 0, false, false);
@@ -56,13 +319,23 @@
 
             mm_menu_1214121454_0.writeMenus();
         } // mmLoadMenus()
-        //-->
+        //&ndash;&gt;
     </script>
     <script language="JavaScript" src="mm_menu.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="application/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
 </head>
 
 <body>
-<script language="JavaScript1.2">mmLoadMenus();</script>
+
+<div class="row">
+    <ul class="nav nav-pills col-sm-12 row">
+        <li role="presentation" class="active col-sm-3"><a href="#">Home</a></li>
+        <li role="presentation" class="active col-sm-3"><a href="#">Profile</a></li>
+        <li role="presentation" class="active col-sm-3"><a href="#">Messages</a></li>
+    </ul>
+</div>
+&lt;!&ndash;<script language="JavaScript1.2">mmLoadMenus();</script>
 <div id="main">
     <div id="nav">
         <ul>
@@ -80,6 +353,127 @@
             <li><a href="contact.html">联系我们</a></li>
         </ul>
     </div>
+    <div class="row">
+        <div>图片</div>
+        <div>
+
+            <table id="itemParameter">
+                <tbody>
+                <tr>
+                    <th colspan="3">基本参数</th>
+                </tr>
+                <tr>
+                    <td width="92">
+                        <div>品牌</div>
+                    </td>
+                    <td width="220">魅族</td>
+                    <td width="2"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>型号</div>
+                    </td>
+                    <td>魅蓝 Note6 航海王限定版套装</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>上市时间</div>
+                    </td>
+                    <td>2015年9月</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>外观样式</div>
+                    </td>
+                    <td>直板</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>颜色</div>
+                    </td>
+                    <td>金色</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>智能机</div>
+                    </td>
+                    <td>是</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>系统版本</div>
+                    </td>
+                    <td>IOS 9</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>CPU型号</div>
+                    </td>
+                    <td>ARM® Cortex®-A53™ 2.0GHz x 8</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>CPU核数</div>
+                    </td>
+                    <td>双核</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>手机操控方式</div>
+                    </td>
+                    <td>电容触摸屏</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>待机模式</div>
+                    </td>
+                    <td>单卡多模</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>运营商标识</div>
+                    </td>
+                    <td>全网通（公开版、移动版、电信版）
+                        移动 4G TD-LTE
+                        联通/电信 4G TD/FDD-LTE
+                        移动 3G TD-SCDMA
+                        联通 3G WCDMA
+                        电信 3G EVDO
+                        移动/联通 2G GSM
+                        电信 2G CDMA</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td height="28">
+                        <div>SIM卡尺寸</div>
+                    </td>
+                    <td>Nano SIM卡</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td height="370">
+                        <div>选购热点</div>
+                    </td>
+                    <td>超薄机身,拍照神器,女性手机,以旧换新,极速上网,反应快,指纹识别</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
     <div id="content"><img src="images/hero.jpg" style="float:left; padding-right:20px;"/>
         <div class="intro">
             <table id="itemParameter">
@@ -205,6 +599,7 @@
         <p>版权所有：<br/>
             作者：</p>
     </div>
-</div>
+</div>&ndash;&gt;
 </body>
 </html>
+-->
