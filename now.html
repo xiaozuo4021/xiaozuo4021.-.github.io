@@ -139,6 +139,22 @@
         padding: 20px 30%;
     }
 
+    .img-view {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+margin-top: 180px;
+    }
+
+    .imgV {
+margin: 20px 50px;
+    }
+
+    .imgV img {
+        width: 200px;
+        height: 130px;
+    }
 </style>
 <body>
 <nav class="navbar navbar-default">
@@ -211,12 +227,24 @@
                 </div>
 
             </div>
-            <div class="swiper-slide" style="background: red;">Slide 3</div>
-            <div class="swiper-slide" style="background: blue;">Slide 4</div>
-            <div class="swiper-slide" style="background: red;">Slide 5</div>
+            <div class="swiper-slide">
+                <div class="main-title">客户案例</div>
+                <div class="img-view">
+                    <div class="imgV">
+                        <img src="./images/index_img/MM.jpg">
+                    </div>
+                    <div class="imgV"><img src="./images/index_img/MM.jpg"></div>
+                    <div class="imgV"><img src="./images/index_img/MM.jpg"></div>
+                    <div class="imgV"><img src="./images/index_img/MM.jpg"></div>
+                </div>
+
+            </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide" style="background: blue;">Slide 4</div>
+        <div class="swiper-slide" style="background: red;">Slide 5</div>
     </div>
+    <div class="swiper-pagination"></div>
+</div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="lib/bootstrap/bootstrap.min.js"></script>
