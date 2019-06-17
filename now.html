@@ -257,7 +257,7 @@
 
             clickId = $(this).attr("id") || 1;
             $(`.navbar-nav >li:eq(${clickId})`).addClass("active");
-        $("li").click(function () {
+
             mySwiper.slideTo($(this).attr("id") - 1);
         })
         var thisId = window.location.hash && window.location.hash.slice(1, window.location.hash.length);
