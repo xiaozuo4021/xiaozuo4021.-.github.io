@@ -110,7 +110,7 @@
         text-align: center;
         font-size: 14px;
         color: #333;
-        background: rgba(255,255,255,0.6);
+        background: rgba(255, 255, 255, 0.6);
         border-radius: 3px;
     }
 
@@ -121,16 +121,22 @@
         text-align: center;
         font-size: 14px;
         color: #333;
-        background: rgba(255,255,255,0.6);
+        background: rgba(255, 255, 255, 0.6);
         border-radius: 3px;
     }
-    .solution{
-        width: 60%;
+
+    .solution {
+        text-align: center;
+        /*border: 1px solid #e5e5e5;*/
+        width: 100%;
+        margin-bottom: 30px;
     }
-    .mes-content{
+
+    .mes-content {
         color: #fff;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
+        padding: 20px 30%;
     }
 
 </style>
@@ -190,13 +196,19 @@
 
             </div>
             <div class="swiper-slide">
-<div class="main-title">解决方案</div>
-<div class="solution">
-    <div class="one-mesTitle">社交电商系统解决方案</div>
-    <div class="mes-content">我们的电商团队是来自一线电商（阿里、京东、苏宁）的资深从业人员，提供成熟、可靠、稳定的电商解决方案，包括PC端电商、移动端APP电商、微信公众号电商、小程序电商、微信三级分销电商、O2O电商、积分商城等。</div>
-</div>
-
-
+                <div class="main-title">解决方案</div>
+                <div class="solution">
+                    <div class="one-mesTitle">社交电商系统解决方案</div>
+                    <div class="mes-content">
+                        我们的电商团队是来自一线电商（阿里、京东、苏宁）的资深从业人员，提供成熟、可靠、稳定的电商解决方案，包括PC端电商、移动端APP电商、微信公众号电商、小程序电商、微信三级分销电商、O2O电商、积分商城等。
+                    </div>
+                </div>
+                <div class="solution">
+                    <div class="one-mesTitle">管理信息化系统解决方案</div>
+                    <div class="mes-content">
+                        我们的管理信息化团队有来自一线管理信息化大厂（SAP、用友）的多年从业经验，提供成熟、可靠、稳定的管理信息化解决方案，包括ERP、CRM、连锁门店管理系统、仓储管理系统、进销存系统、OA系统、HRM系统等。
+                    </div>
+                </div>
 
             </div>
             <div class="swiper-slide" style="background: red;">Slide 3</div>
@@ -212,7 +224,7 @@
 <script src="./swiper/swiper.min.js"></script>
 <script>
     $(function () {
-        var id = window.location.hash.replace(/#/g,'') || 1;
+        var id = window.location.hash.replace(/#/g, '') || 1;
         var clickId = id;
         $(`.navbar-nav >li:eq(${id})`).addClass("active");
 
@@ -227,8 +239,8 @@
             $(".navbar-nav >li")
                 .siblings()
                 .removeClass("active");
-                console.log(11111)
-            $(".navbar-nav >li:eq("+clickId+")")
+            console.log(11111)
+            $(".navbar-nav >li:eq(" + clickId + ")")
                 .addClass("active");
         });
 
@@ -252,8 +264,8 @@
             }
         })
 
-        $("li").click(function(){
-            mySwiper.slideTo($(this).attr("id")-1);
+        $("li").click(function () {
+            mySwiper.slideTo($(this).attr("id") - 1);
 
             clickId = $(this).attr("id") || 1;
             $(`.navbar-nav >li:eq(${clickId})`).addClass("active");
