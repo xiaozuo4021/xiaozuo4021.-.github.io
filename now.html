@@ -155,6 +155,46 @@
         width: 200px;
         height: 130px;
     }
+
+     .slide5 .one-mes{
+        margin-top: 20vh;
+        border: none;
+    }
+    .slide5 .two-mes{
+        margin-top: 10vh;
+        border: none;
+    }
+    .slide5 .one-mes .es-item{
+        font-size: 20px;
+    }
+    .slide5 .mes-item  {
+        color: #dfdfdf;
+        width: 100%;
+        padding: 1vh;
+        justify-content: flex-start;
+    }
+
+    .slide5 .mes-item  div {
+        display: flex;
+    }
+
+    .slide5 .item2 {
+        flex-wrap: wrap;
+    }
+    .item2 div{
+        width: 100%;
+        font-size: 20px;
+        color: #fff;
+    }
+    .slide5 .two{
+        width: 80%;
+    }
+     .slide5 .two-mes{
+        background: rgba(0,0,0,0.1);
+    }
+    .slide5 .item2{
+        background: none;
+    }
 </style>
 <body>
 <nav class="navbar navbar-default">
@@ -179,15 +219,14 @@
                 <div class="main-title">主营业务</div>
                 <div class="one-mes">
                     <div class="one-mesTitle">社交电商系统开发</div>
-                    <div class="mes-item">
+                    <div class="mes-item" style="justify-content: space-around;flex-wrap: wrap;">
                         <div class="item">PC电商开发</div>
                         <div class="item">移动App电商开发</div>
                         <div class="item">微信App电商开发</div>
                         <div class="item">App开发</div>
                         <div class="item">小程序开发</div>
                         <div class="item">微信公众号开发</div>
-                    </div>
-                    <div class="mes-item">
+            
                         <div class="item">O2O商城系统开发</div>
                         <div class="item">小程序商城开发</div>
                         <div class="item">微信三级分销系统</div>
@@ -245,7 +284,26 @@
                 <div style="color: #fff">暂无内容</div>
 
             </div>
-            <div class="swiper-slide" style="background: red;">Slide 5</div>
+             <div class="swiper-slide slide5" >
+                <div class="one-mes">
+                    <div class="one-mesTitle">关于我们</div>
+                    <p class="mes-item  ">
+                        我们团队成员来自电商一线大厂（阿里、京东、苏宁）及管理领导厂商（SAP、用友），拥有多年的电商系统开发经验及管理信息化系统开发经验，主营业务为互联网电商及管理信息化系统的咨询、方案规划、产品设计、系统开发等，承做了“1号店”开发平台规划和设计、“国美在线”产品设计、“联通礼品频道”设计、“联合荣大集团”ERP系统规划等项目。
+                    </p>
+                </div>
+                <div class="two-mes">
+                    <div class="one-mesTitle">联系我们</div>
+                    <div class="mes-item two">
+                        <div class="item2">
+                            <div><img src="./images/now_img/dianhua.png" style="width: 30px;height: 30px;margin-top: 7%; margin-right: 3%;" />136 2136 8549</div>
+                            <div><img src="./images/now_img/duanxin.png" style="width: 30px;height: 30px;margin-top: 7%; margin-right: 3%;" />3152069285@qq.com</div>
+                        </div>
+                      <!--   <div class="item2">
+                            微信扫一扫，联系客户经理
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="swiper-pagination"></div>
