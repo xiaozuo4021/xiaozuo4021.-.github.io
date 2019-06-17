@@ -53,17 +53,86 @@
         background: #dfdfdf;
     }
 
-  
+    .swiper-container {
+        width: 100%;
+        height: calc(100vh - 52px);
+    }
 
+    .navbar {
+        margin-bottom: 0;
+    }
 
+    .swiper-slide {
 
-.swiper-container {
-    width: 100%;
-    height:  calc( 100vh - 52px);
-}  
-.navbar{
-    margin-bottom: 0;
-}
+        background-image: url("./images/index_img/k5.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 92vh;
+        padding: 0px 10%;
+    }
+
+    .main-title {
+        color: dodgerblue;
+        font-size: 28px;
+        padding-top: 30px;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .one-mes {
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+
+    .two-mes {
+        border: 1px solid #e5e5e5;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+
+    .one-mesTitle {
+        color: dodgerblue;
+        font-size: 28px;
+        margin: 20px 0px;
+        padding-left: 20px;
+    }
+
+    .mes-item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item {
+        /*background-color: #fff;*/
+        margin: 20px;
+        width: 150px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        background: rgba(255,255,255,0.6);
+        border-radius: 3px;
+    }
+
+    .item2 {
+        margin: 20px;
+        width: 30%;
+        line-height: 80px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        background: rgba(255,255,255,0.6);
+        border-radius: 3px;
+    }
+    .solution{
+        width: 60%;
+    }
+    .mes-content{
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
 </style>
 <body>
 <nav class="navbar navbar-default">
@@ -84,8 +153,52 @@
 <div class=" cont">
     <div class="swiper-container">
         <div class="swiper-wrapper swiper-no-swiping">
-            <div class="swiper-slide" style="background: red;">Slide 1</div>
-            <div class="swiper-slide" style="background: blue;">Slide 2</div>
+            <div class="swiper-slide">
+                <div class="main-title">主营业务</div>
+                <div class="one-mes">
+                    <div class="one-mesTitle">社交电商系统开发</div>
+                    <div class="mes-item">
+                        <div class="item">PC电商开发</div>
+                        <div class="item">移动App电商开发</div>
+                        <div class="item">微信App电商开发</div>
+                        <div class="item">App开发</div>
+                        <div class="item">小程序开发</div>
+                        <div class="item">微信公众号开发</div>
+                    </div>
+                    <div class="mes-item">
+                        <div class="item">O2O商城系统开发</div>
+                        <div class="item">小程序商城开发</div>
+                        <div class="item">微信三级分销系统</div>
+                        <div class="item">网站开发</div>
+                        <div class="item">小程序开发</div>
+                        <div class="item">积分开发</div>
+                    </div>
+                </div>
+                <div class="two-mes">
+                    <div class="one-mesTitle">管理信息化系统开发</div>
+                    <div class="mes-item">
+                        <div class="item2">ERP系统开发</div>
+                        <div class="item2">CRM系统开发</div>
+                        <div class="item2">连锁门店管理系统开发</div>
+                        <div class="item2">仓储系统开发</div>
+                        <div class="item2">进销存系统开发</div>
+                        <div class="item2">OA/HRM开发</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="swiper-slide">
+<div class="main-title">解决方案</div>
+<div class="solution">
+    <div class="one-mesTitle">社交电商系统解决方案</div>
+    <div class="mes-content">我们的电商团队是来自一线电商（阿里、京东、苏宁）的资深从业人员，提供成熟、可靠、稳定的电商解决方案，包括PC端电商、移动端APP电商、微信公众号电商、小程序电商、微信三级分销电商、O2O电商、积分商城等。</div>
+</div>
+
+
+
+            </div>
             <div class="swiper-slide" style="background: red;">Slide 3</div>
             <div class="swiper-slide" style="background: blue;">Slide 4</div>
             <div class="swiper-slide" style="background: red;">Slide 5</div>
@@ -120,34 +233,35 @@
         });
 
 
-
-        var mySwiper = new Swiper ('.swiper-container', {
+        var mySwiper = new Swiper('.swiper-container', {
             direction: 'vertical', // 垂直切换选项
-            
+
             autoplay: false,
             // 如果需要分页器
             pagination: {
-              el: '.swiper-pagination',
-              clickable :true,
+                el: '.swiper-pagination',
+                clickable: true,
             },
-            noSwiping : true,
-            speed:0,
-             on: {
-                resize: function(){
-                  //窗口变化了
-                  this.init()
+            noSwiping: true,
+            speed: 0,
+            on: {
+                resize: function () {
+                    //窗口变化了
+                    this.init()
                 }
             }
-        })        
+        })
 
         $("li").click(function(){
             mySwiper.slideTo($(this).attr("id")-1);
 
             clickId = $(this).attr("id") || 1;
             $(`.navbar-nav >li:eq(${clickId})`).addClass("active");
+        $("li").click(function () {
+            mySwiper.slideTo($(this).attr("id") - 1);
         })
-        var thisId = window.location.hash&&window.location.hash.slice(1,window.location.hash.length);
-        mySwiper.slideTo(thisId-1);
+        var thisId = window.location.hash && window.location.hash.slice(1, window.location.hash.length);
+        mySwiper.slideTo(thisId - 1);
 
     })
 </script>
