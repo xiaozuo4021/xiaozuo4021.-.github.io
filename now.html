@@ -9,6 +9,9 @@
     <link href="lib/bootstrap/bootstrap.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+
+    <link rel="stylesheet" href="./swiper//swiper.min.css">
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -42,69 +45,25 @@
         text-align: right;
     }
 
-    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-        border: none;
-    }
-
-    .boot {
-        text-align: center;
-    }
-
-    .boot img {
-        width: 65%;
-        border-radius: 15%;
-    }
-
-    .foot li a {
-        color: #999;
-        font-size: 12px;
-        padding: 0 15px;
-    }
-
-    .foot li {
-        float: left;
-        border-left: 1px solid #efefef;
-    }
-
-    .foots div a {
-        color: #999;
-        font-size: 12px;
-        padding: 0 5px;
-    }
-
-    .foots div {
-        float: left;
-    }
-
     li {
         list-style: none;
-    }
-
-    .cont > div {
-        text-align: center;
-        transition: transform .4s ease;
-    }
-
-    .cont > div img {
-        transition: transform .4s ease;
-        border-radius: 46%;
-    }
-
-    .cont > div a {
-        color: #000
-    }
-
-    .cont > div img:hover {
-        transform: translateY(-10px);
     }
 
     body {
         background: #dfdfdf;
     }
 
-    .indrouce p {
-        text-indent: 25px;
-    }
+  
+
+
+
+.swiper-container {
+    width: 100%;
+    height:  calc( 100vh - 52px);
+}  
+.navbar{
+    margin-bottom: 0;
+}
 </style>
 <body>
 <nav class="navbar navbar-default">
@@ -112,131 +71,32 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class=""><a href="index.html">首页</a></li>
-                <li><a href="history.html">公司历史</a></li>
-                <li><a href="now.html">公司现状</a></li>
-                <li><a href="charactor.html">重要人物</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品介绍</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="player.html">硬件</a></li>
-                        <li><a href="shops.html">软件</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">购买方式</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="shops.html">经销商</a></li>
-                        <li><a href="player.html">电子商务</a></li>
-                    </ul>
-                </li>
-                <li><a href="question.html">在线答疑</a></li>
-                <li><a href="contact.html">联系我们</a></li>
+                <li id="1"><a href="#1">主营业务</a></li>
+                <li id="2"><a href="#2">解决方案</a></li>
+                <li id="3"><a href="#3">客户案例</a></li>
+                <li id="4"><a href="#4">行业资讯</a></li>
+                <li id="5"><a href="#5">联系我们</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="container cont">
-    <div class="col-md-4">
-        <img src="images/history_img/his01.jpg">
-        <a href="#" class="row">雅诗</a>
-    </div>
-    <div class="col-md-4">
-        <img src="images/history_img/his02.jpg">
-        <a href="#" class="row">雅诗</a>
-    </div>
-    <div class="col-md-4">
-        <img src="images/history_img/his03.jpg">
-        <a href="#" class="row">雅诗</a>
-    </div>
-</div>
-<div class="container indrouce">
-    <div class="col-md-12">
-        <div class="col-md-8">
-            <p>
-                事实上，截至目前为止，雅诗在全国一共拥有近2000家专卖店，产品在中国大陆、中国香港、印度、俄罗斯、法国、意大利、乌克兰、以色列、捷克、斯洛伐克、马来西亚、南非等国家和地区有销售，雅诗也在积极部署更为深入的海外市场战略。
-            </p>
-            <p>
-                国产手机厂商翘楚——雅诗，在经过数年的沉淀，在手机行业已经悟出一套属于自己的战略，在国内市场取得了不俗的佳绩。从M8到今天的MX2，在叫好的同时同 ，据了解，雅诗在俄罗斯以及以色列的市场反应亦十分不错。 </p>
-        </div>
-        <img class="col-md-3" src="images/now_img/now01.jpg">
-        <div class="col-md-8">
-            <p>
-                在2013年的巴塞罗那MWC展会期间，雅诗已经与以色列国内相关经销商签订合约，正式将雅诗MX2推向以色列市场。 同时，雅诗方面亦发布新固件，增加对以色列官方语言希伯来语的支持。 </p>
-            <p>
-                以色列网络媒体报道自2013年3月份在以色列国内开售以来，雅诗MX2的销量都十分令人满意!据当地媒体报道，雅诗MX2在以色列当地、尤其是特拉维夫等大城市都能看到MX2的身影，可见MX2已经迅速抢占了当地市场。雅诗MX2还在当地科技网站获得高度赞誉，tsgpot.c o.i l更将其称为“中国的iPhone”，可见媒体对其的高度评价。报道中还特别指出，认为雅诗MX2所搭载FlymeOS既简洁又实用，人性化表现非常卓越。
-            </p>
-        </div>
-        <img class="col-md-3"  src="images/logo.jpg" alt="">
-        <p class="col-md-12">  在俄罗斯市场方面，从M9时代开始，雅诗就已经开始在俄罗斯探索市场，到今天的MX2，雅诗已经在俄罗斯打响了知名度。雅诗的MX2已经在四月尾通过俄罗斯运营商Megafon全线开售，并在5月份前两周销量全面上升，市场反应非常热烈。据了解，雅诗在俄罗斯方面的合作伙伴，更是投入500-600万卢布的广告费，主要投放在地铁、户外广告牌及互联网。此外，据雅诗俄罗斯方面消息，当地的办公室及形象展示厅设计已经初步完成，主体风格与大陆地区专门店一致，雅诗亦正积极推进俄罗斯专卖店的落实。
-        </p>
 
-        <div class="col-md-8">
-            <p>雅诗是个很有格调的公司，比如从MX2 时代就开始以日本的“侘寂美学”作为设计理念。
-                “侘寂”强调的是谦逊、低调、留有余地，同时也崇尚质朴、自然、随遇而安。
-                这种设计哲学和当今竞争激烈的市场中锐意进取的商业化潮流格格不入，但也奠定了MX系列一贯的“谦谦君子，温润如玉”路线。</p>
-            <p>从M8到今天的MX2，每一款手机的推出都触动着魅友们的心，雅诗一直以极致追求的工匠精神去追赶国际水准。今天的雅诗MX2，无论在硬件还是软件上都能与一线大厂匹敌，在创新性上更是有所超越，我们有理由相信，雅诗在国际市场上一定能走得更远!通过香港、俄罗斯、以色列等海外市场的验证，我们看到了雅诗在国际化进程上的飞速发展，相信在不久的将来，雅诗能够以其追求极致梦想的姿态，在国际市场上取得成功。
-            </p>
-            <p> 截至2013年12月，雅诗已顺利攻下香港、俄罗斯、以色列和乌克兰等海外市场。2014年伊始，雅诗进军法国，开拓欧洲市场[13]  。2014年伊始，雅诗开拓的脚步仍在继续。雅诗即将进军法国，并定于巴黎玛索大道洲际酒店举行官方新闻发布会。从媒体邀请函上的信息可以得知，该发布会在3月6号早上9点开始，发布的产品为雅诗MX3，此外还特别邀请了记者前往现场。  2014年9月4日，雅诗科技与戴尔签署合作备忘录，双方将建立长期战略合作伙伴关系，致力于加速雅诗移动互联网基础建设，同时协助雅诗搭建内部私有云。这一举动，也体现了戴尔对中国高端手机制造业的支持。
-        </p>
-            <p>
-                2014年11月25日，雅诗科技与Canonical正式于雅诗总部签署了战略合作协议。双方确定共同建设Ubuntu智能手机生态系统，并促进雅诗Flyme服务在海外市场拓展。
-            </p>
+<div class=" cont">
+    <div class="swiper-container">
+        <div class="swiper-wrapper swiper-no-swiping">
+            <div class="swiper-slide" style="background: red;">Slide 1</div>
+            <div class="swiper-slide" style="background: blue;">Slide 2</div>
+            <div class="swiper-slide" style="background: red;">Slide 3</div>
+            <div class="swiper-slide" style="background: blue;">Slide 4</div>
+            <div class="swiper-slide" style="background: red;">Slide 5</div>
         </div>
-        <img class="col-md-3"  src="images/now_img/now02.jpg" alt="">
-        <img class="col-md-3"  src="images/now_img/now03.jpg" alt="">
-        <p  class="col-md-12">
-            2015年8月26日，雅诗在印度新德里举行品牌发布会，发布印度版MX5手机售价19999卢比(约合1934元人民币)。雅诗借再次发布MX5之势宣布全面进军印度市场。
-        </p>
-    </div>
-</div>
-<div class="container boot">
-    <div class="col-md-3"><img src="images/index_img/bg01.jpg"></div>
-    <div class="col-md-3"><img src="images/index_img/bg02.jpg"></div>
-    <div class="col-md-3"><img src="images/index_img/bg03.jpg"></div>
-    <div class="col-md-3"><img src="images/index_img/bg01.jpg"></div>
-</div>
-<div class="row foot">
-    <ul class="row" style="padding-left: 18%;padding-top: 1%">
-        <li class="">
-            <a class="layout-footer-interlock-link">了解雅诗</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">加入我们</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">联系我们</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">Flyme</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">雅诗社区</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">天猫店</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">问题反馈</a>
-        </li>
-        <li class="">
-            <a class="layout-footer-interlock-link">线上销售授权名单公示</a>
-        </li>
-    </ul>
-</div>
-<div class="row foots">
-    <div class="clearfix" style="padding-left: 16%;    padding-top: 1%;">
-        <a>©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.</a>
-        <a>粤ICP备13003602号-2</a>
-        <a>合字B2-20170010</a>
-        <a>营业执照</a>
-        <a>法律声明</a>
-        <a class="layout-footer-copyright-link">粤公网安备 44049102496009 号</a>
+        <div class="swiper-pagination"></div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="lib/bootstrap/bootstrap.min.js"></script>
+<!-- Swiper JS -->
+<script src="./swiper/swiper.min.js"></script>
 <script>
     $(function () {
         $(".navbar-nav >li:eq(2)").addClass("active");
@@ -251,9 +111,34 @@
             $(".navbar-nav >li").siblings().removeClass("active");
             $(".navbar-nav >li:eq(2)").addClass("active");
         });
-        $('.carousel').carousel({
-            interval: 1000
+
+
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            
+            autoplay: false,
+            // 如果需要分页器
+            pagination: {
+              el: '.swiper-pagination',
+              clickable :true,
+            },
+            noSwiping : true,
+            speed:0,
+             on: {
+                resize: function(){
+                  //窗口变化了
+                  this.init()
+                }
+            }
+        })        
+
+        $("li").click(function(){
+            mySwiper.slideTo($(this).attr("id")-1);
         })
+        var thisId = window.location.hash&&window.location.hash.slice(1,window.location.hash.length);
+        mySwiper.slideTo(thisId-1);
+
     })
 </script>
 </body>
