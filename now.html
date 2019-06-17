@@ -99,17 +99,24 @@
 <script src="./swiper/swiper.min.js"></script>
 <script>
     $(function () {
-        $(".navbar-nav >li:eq(2)").addClass("active");
+        var id = window.location.hash.replace(/#/g,'') || 1;
+        var clickId = id;
+        $(`.navbar-nav >li:eq(${id})`).addClass("active");
+
         $(".navbar-nav >li").hover(function () {
-            $(".navbar-nav .dropdown-menu").hide();
-            $(this).siblings().removeClass("active")
+            $(this)
+                .siblings()
+                .removeClass("active");
             $(this)
                 .addClass("active")
                 .find(".dropdown-menu").show();
         }, function () {
-            $(".navbar-nav .dropdown-menu").hide();
-            $(".navbar-nav >li").siblings().removeClass("active");
-            $(".navbar-nav >li:eq(2)").addClass("active");
+            $(".navbar-nav >li")
+                .siblings()
+                .removeClass("active");
+                console.log(11111)
+            $(".navbar-nav >li:eq("+clickId+")")
+                .addClass("active");
         });
 
 
@@ -135,6 +142,9 @@
 
         $("li").click(function(){
             mySwiper.slideTo($(this).attr("id")-1);
+
+            clickId = $(this).attr("id") || 1;
+            $(`.navbar-nav >li:eq(${clickId})`).addClass("active");
         })
         var thisId = window.location.hash&&window.location.hash.slice(1,window.location.hash.length);
         mySwiper.slideTo(thisId-1);

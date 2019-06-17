@@ -80,6 +80,10 @@
     li {
         list-style: none;
     }
+     #body {
+        overflow: hidden;
+    }
+
 
     #body .lunbo {
         width: 100%;
@@ -182,22 +186,21 @@
         height: 40px;
         border-radius: 50%;
     }
+    .navbar{
+        margin-bottom: 0;
+    }
 </style>
-<body id="bodys">
+<body id="bodys" style="overflow: hidden;">
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class=""><a href="index.html">首页</a></li>
-                <li><a href="history.html">主营业务</a></li>
-                <li><a href="now.html">解决方案</a></li>
-                <li><a href="charactor.html">客户案例</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">行业资讯</a>
-                </li>
-
-                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="now.html#1">主营业务</a></li>
+                <li><a href="now.html#2">解决方案</a></li>
+                <li><a href="now.html#3">客户案例</a></li>
+                <li><a href="now.html#4">行业资讯</a></li>
+                <li><a href="now.html#5">联系我们</a></li>
             </ul>
         </div>
     </div>
@@ -274,13 +277,11 @@
     $(function () {
         $(".navbar-nav >li:eq(0)").addClass("active")
         $(".navbar-nav >li").hover(function () {
-            $(".navbar-nav .dropdown-menu").hide();
-            $(this).siblings().removeClass("active")
             $(this)
-                .addClass("active")
-                .find(".dropdown-menu").show();
+                .siblings()
+                .removeClass("active")
+            $(this).addClass("active")
         }, function () {
-            $(".navbar-nav .dropdown-menu").hide();
             $(".navbar-nav >li").siblings().removeClass("active")
             $(".navbar-nav >li:eq(0)").addClass("active")
         });
